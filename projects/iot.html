@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iot</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Add your CSS here or in your styles.css file */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between the videos */
+        }
+        .video-container video {
+            width: 45%; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .project-details img {
+            width: 40%; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        /* Project List Styles */
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Creates a 2-column layout */
+            gap: 20px; /* Space between sections */
+            margin: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html#home">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="projects-container">
+        <section id="project-details">
+            <h2>Smartwatch</h2>
+            <div class="project-details">
+                <div class="video-container">
+                    <video controls>
+                        <source src="/videos/toutch.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video controls>
+                        <source src="/videos/battery.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="project-info">
+                    <h3>Smartwatch with Gyroscope and Touch Interface</h3>
+                    <p>
+                        This smartwatch project utilizes a gyroscope for accurate step counting and a touch interface, 
+                        all coded in C++ with Arduino. The smartwatch is designed to provide real-time step tracking and 
+                        touch-based interaction, offering a convenient and interactive user experience.
+                    </p>
+                    <p>
+                        <strong>Key Features:</strong>
+                    </p>
+                    <ul>
+                        <li><strong>Gyroscope Integration:</strong> Provides precise step counting and motion detection.</li>
+                        <li><strong>Touch Interface:</strong> Allows for intuitive user interaction and control.</li>
+                        <li><strong>C++ and Arduino Development:</strong> Ensures efficient performance and responsive functionality.</li>
+                        <li><strong>Real-Time Feedback:</strong> Offers immediate feedback and updates based on user interaction.</li>
+                    </ul>
+                    <!-- Add more details about the project here if needed -->
+                </div>
+            </div>
+        </section>
+    
+        <section id="automated-blinds">
+            <h2>Automated Blinds Control</h2>
+            <div class="project-details">
+                <img src="/pictures/bind.png" alt="Trading Program">
+                <div class="project-info">
+                    <h3>Automated Blinds with WiFi and NTP</h3>
+                    <p>
+                        This project involves an automated blind system controlled via WiFi. The system uses an Arduino with a stepper motor 
+                        to control the movement of the blinds. It is programmed to move the blinds up or down based on the time of day and 
+                        day of the week, using an NTP client to synchronize time.
+                    </p>
+                    <p>
+                        <strong>Key Features:</strong>
+                    </p>
+                    <ul>
+                        <li><strong>WiFi Connectivity:</strong> Allows remote control and status monitoring through a web interface.</li>
+                        <li><strong>Stepper Motor Control:</strong> Precisely moves the blinds up or down based on programmed instructions.</li>
+                        <li><strong>NTP Time Synchronization:</strong> Ensures accurate timing for automatic blind movements.</li>
+                        <li><strong>EEPROM Storage:</strong> Saves the state of the blinds to retain information across reboots.</li>
+                    </ul>
+                    <p>
+                        <strong>How It Works:</strong>
+                    </p>
+                    <p>
+                        The system connects to your WiFi network and uses an NTP client to get the current time. Based on the time of day and 
+                        the day of the week, it will automatically move the blinds up or down. For instance, the blinds may be set to open at 
+                        6 AM on weekdays and close at 10 PM. You can also manually control the blinds through a web interface provided by the 
+                        embedded server on the Arduino.
+                    </p>
+                    <p>
+                        The code utilizes EEPROM to store the last state of the blinds, ensuring that the system resumes in the correct state 
+                        even after a power cycle.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    
+
+    <footer>
+    </footer>
+</body>
+</html>
