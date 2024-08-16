@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuAntiVirus</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <section id="project-details">
+        <h2>TuAntiVirus</h2>
+        <div class="project-details">
+            <div class="image-container">
+                <img src="/pictures/antivirus.png" alt="TuAntiVirus" class="project-img">
+            </div>
+            <div class="project-info">
+                <h3>TuAntiVirus</h3>
+                <p>
+                    TuAntiVirus is a Windows-based antivirus application designed to detect and manage malware threats. 
+                    Developed using C++ and the Win32 API, this application offers both file-specific and full system 
+                    scanning capabilities. It utilizes MD5 hashing to compare files against known malware signatures 
+                    and provides a user-friendly interface for easy operation and result tracking.
+                </p>
+                <p>
+                    <strong>Key Features:</strong>
+                </p>
+                <ul>
+                    <li><strong>File Scanning:</strong> Select and scan individual files for known malware using MD5 hashes.</li>
+                    <li><strong>Full System Scan:</strong> Recursively scans all files in a specified directory for malware.</li>
+                    <li><strong>Real-Time Status Updates:</strong> Displays current scan status and results directly in the user interface.</li>
+                    <li><strong>Results Management:</strong> Logs scanning results to a text file and allows users to view results directly.</li>
+                    <li><strong>Windows API Integration:</strong> Utilizes Win32 API for window management and user interactions.</li>
+                </ul>
+                <h4>How It Works:</h4>
+                <p>
+                    The application uses MD5 hashing to identify malware. When a file is scanned, its MD5 hash is compared 
+                    against a list of known malware hashes stored in a text file. The application updates the user interface 
+                    with the scan results, indicating whether the file is infected or clean. For a full system scan, 
+                    the application iterates through all files in the specified directory, applying the same hash comparison 
+                    and updating the results accordingly.
+                </p>
+                <h4>Installation and Usage:</h4>
+                <p>
+                    To use TuAntiVirus, compile the C++ source code in a Windows environment and run the executable. 
+                    Use the provided buttons to initiate file scans, perform full system scans, and view results. 
+                    Ensure that the `hashcodes.txt` file is correctly populated with known malware hashes for accurate scanning.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+</body>
+</html>

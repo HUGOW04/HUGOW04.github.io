@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Screen of Death (BSoD)</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <section id="project-details">
+        <h2>Blue Screen of Death (BSoD)</h2>
+        <div class="project-details">
+            <div class="image-container">
+                <img src="/pictures/BLE.png" alt="Blue Screen of Death" class="project-img">
+            </div>
+            <div class="project-info">
+                <h3>Blue Screen of Death (BSoD)</h3>
+                <p>
+                    This C++ application demonstrates how to trigger a Blue Screen of Death (BSoD) on a Windows system. By using 
+                    low-level NT API functions, the application simulates a critical system error that causes the operating system 
+                    to crash and display a BSoD.
+                </p>
+                <p>
+                    <strong>Key Features:</strong>
+                </p>
+                <ul>
+                    <li><strong>Privilege Adjustment:</strong> Elevates process privileges to allow system-level shutdown operations.</li>
+                    <li><strong>BSOD Simulation:</strong> Uses NT API functions to simulate a critical error that triggers a BSoD.</li>
+                    <li><strong>Windows API Integration:</strong> Utilizes Windows NT API for manipulating system privileges and errors.</li>
+                    <li><strong>Educational Use:</strong> Demonstrates system-level operations and the impact of critical system errors.</li>
+                </ul>
+                <h4>How It Works:</h4>
+                <p>
+                    The application first elevates its privileges to allow system-level operations. It then invokes a critical system 
+                    error using the `NtRaiseHardError` function with a specific error status that causes the operating system to 
+                    crash and display a BSoD. This is used to demonstrate the effects of critical system errors.
+                </p>
+                <h4>Installation and Usage:</h4>
+                <p>
+                    Compile the C++ source code in a Windows environment with appropriate permissions. Run the executable to trigger 
+                    a BSoD. Use this application responsibly and only in a controlled environment, as it will crash the system and 
+                    may result in data loss.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+</body>
+</html>

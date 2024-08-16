@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trojan Horse</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <style>
+        * CSS for horizontal alignment and larger images */
+        .image-container {
+            display: flex; /* Use flexbox for horizontal alignment */
+            flex-direction: row; /* Align images in a row */
+            align-items: center; /* Center images vertically */
+            gap: 20px; /* Space between images */
+            padding: 20px; /* Padding around the images */
+            overflow-x: auto; /* Allow horizontal scrolling if needed */
+        }
+
+        .project-img {
+            max-width: 600px; /* Set a larger maximum width for images */
+            max-height: 500px; /* Optional: Set a maximum height to maintain aspect ratio */
+            width: auto; /* Maintain aspect ratio */
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid #ccc; /* Optional: Border for better visibility */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Shadow for visual depth */
+        }
+
+        .project-details {
+            padding: 20px; /* Add padding around the project details */
+            box-sizing: border-box; /* Include padding in the total width */
+        }
+    </style>
+</head>
+<body>
+    <section id="project-details">
+        <h2>Trojan Horse</h2>
+        <div class="project-details">
+            <div class="image-container">
+                <img src="/pictures/trojan.png" alt="Trojan Horse" class="project-img">
+                <img src="/pictures/remote.png" alt="Remote Control" class="project-img">
+                <img src="/pictures/webremote.jpg" alt="Web Remote" class="project-img">
+            </div>
+            <div class="project-info">
+                <h3>Trojan Horse</h3>
+                <p>
+                    This C++ application is a Trojan horse designed to execute a variety of malicious activities on a Windows system. 
+                    It includes features for remote control, file and system manipulation, data collection, and more. The Trojan 
+                    horse can connect to a command-line interface, manage files, capture user data, and disrupt system operations.
+                </p>
+                <p>
+                    <strong>Key Features:</strong>
+                </p>
+                <ul>
+                    <li><strong>Command Line Access:</strong> Connects to a command-line interface for executing system commands remotely.</li>
+                    <li><strong>File and Folder Management:</strong> Allows for changing directories, removing files and folders, and encrypting files.</li>
+                    <li><strong>System Information Retrieval:</strong> Gathers detailed information about the system's hardware and software.</li>
+                    <li><strong>Process Management:</strong> Provides functionality to kill running processes on the target machine.</li>
+                    <li><strong>Keylogging:</strong> Captures and logs keystrokes to gather sensitive information like passwords.</li>
+                    <li><strong>Error Display:</strong> Displays custom error messages on the target's screen to mislead or confuse the user.</li>
+                    <li><strong>Screenshots:</strong> Takes screenshots of the user's desktop to monitor activity.</li>
+                    <li><strong>Browser Data Extraction:</strong> Extracts data from Google Chrome, including saved passwords and browsing history.</li>
+                    <li><strong>Webcam Access:</strong> Captures images from the system's webcam to gather visual information.</li>
+                </ul>
+                <h4>How It Works:</h4>
+                <p>
+                    Upon execution, the Trojan horse hides the console window to avoid detection. It connects to a remote server or command 
+                    center to receive and execute commands. The Trojan performs a variety of actions including managing files, killing processes, 
+                    capturing keystrokes, and displaying error messages. It also takes screenshots and extracts sensitive data from the browser. 
+                </p>
+                <h4>Installation and Usage:</h4>
+                <p>
+                    Compile the C++ source code in a Windows environment and run the executable to start the Trojan horse. This application 
+                    is intended for educational purposes to demonstrate the capabilities and risks of such malicious software. Use it 
+                    responsibly and only in a controlled environment where you have explicit permission to test and analyze such tools.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,285 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #2e2e2e; /* Dark grey background */
+    color: #f4f4f4; /* Light grey text */
+    padding-bottom: 60px; /* Adjust based on the footer's height */
+}
+
+header:hover {
+    background: #333; /* Slightly lighter grey on hover */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #f4f4f4; /* Light grey text */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #4caf50; /* Light green on hover */
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #4caf50; /* Light green underline */
+    transition: width 0.3s ease-in-out;
+    margin: 5px auto 0;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Section Styles */
+section {
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 1400px; /* Increased max-width */
+    background: #3a3a3a; /* Dark grey background */
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Intro Section Styles */
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.intro-text {
+    flex: 1;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #4caf50; /* Light green */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #45a049; /* Slightly darker green */
+}
+
+/* Container for Skills and Projects */
+#skills-projects {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+/* Skills Section */
+.skills {
+    flex: 1;
+    background: #3a3a3a; /* Dark grey background */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    max-width: 350px; /* Increased max-width */
+}
+
+/* Projects Section Styles */
+.projects {
+    flex: 2;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Increased minimum width */
+    gap: 20px;
+}
+
+.project-item {
+    display: block;
+    background: #2e2e2e; /* Darker grey background for items */
+    color: #f4f4f4; /* Light grey text */
+    text-decoration: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.project-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures images cover their container without distortion */
+}
+
+.project-item h3 {
+    margin: 15px;
+}
+
+/* Project Section Styles */
+.project-section {
+    background: #3a3a3a; /* Dark grey background */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    margin: 0 auto; /* Centering the section */
+    max-width: 1400px; /* Increased max-width */
+}
+
+/* Container for Projects */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive minimum width */
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    max-width: 1400px; /* Increased max-width */
+    margin: 0 auto; /* Centering the grid container */
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column; /* Stack image and info vertically */
+    gap: 20px;
+}
+
+.project-details img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.project-img {
+    flex: 1;
+    max-width: 100%; /* Ensures the image does not exceed its container */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.project-info {
+    flex: 2;
+    min-width: 300px; /* Ensures the text section has a minimum width */
+}
+
+.project-info h3 {
+    margin-top: 0;
+}
+
+.project-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.project-info ul li {
+    margin-bottom: 10px;
+}
+
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    #skills-projects {
+        flex-direction: column;
+    }
+
+    .skills, .projects {
+        max-width: 100%; /* Ensure skills and projects take full width */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+
+    section {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 100%; /* Full width on small screens */
+    }
+
+    .project-list {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* Single column on small screens */
+    }
+
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .project-details {
+        flex-direction: column;
+    }
+
+    .project-info {
+        min-width: auto; /* Remove minimum width constraint */
+    }
+}
