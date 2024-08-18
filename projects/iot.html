@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iot</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <style>
+        /* Add your CSS here or in your styles.css file */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between the videos */
+        }
+        .video-container video {
+            width: 45%; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .project-details img {
+            width: 40%; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        /* Project List Styles */
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Creates a 2-column layout */
+            gap: 20px; /* Space between sections */
+            margin: 50px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <section id="skills-projects">   
+        <div class="projects">
+            <div class="project-list">
+                <a href="/projects/iot/smartwatch.html" class="project-item">
+                    <img src="/pictures/clock1.png" alt="Aimbot Screenshot">
+                    <h3>Smartwatch</h3>
+                    <p>Smartwatch with Gyroscope and Touch Interface</p>
+                </a>                    
+                <a href="/projects/iot/binds.html" class="project-item">
+                    <img src="/pictures/bind.png" alt="Cheat Engine Screenshot">
+                    <h3>Automated Blinds</h3>
+                    <p>Move the bind up and down based on time of the day</p>
+                </a>               
+                <a href="/projects/iot/ticker.html" class="project-item">
+                    <img src="/pictures/ticker.jpg" alt="Ticker Display">
+                    <h3>Ticker</h3>
+                    <p>ESP32 ticker that fetches data from an API and displays it on a screen.</p>
+                </a>
+                               
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+</body>
+</html>
