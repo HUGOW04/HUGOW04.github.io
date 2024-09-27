@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ransomware</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <section id="project-details">
+        <h2>Ransomware</h2>
+        <div class="project-details">
+            <div class="image-container">
+                <img src="/pictures/encrypted.png" alt="Ransomware" class="project-img">
+            </div>
+            <div class="project-info">
+                <h3>Ransomware</h3>
+                <p>
+                    This C++ ransomware program is designed to demonstrate the functionality of file encryption and decryption on a Windows system, encrypting user files and demanding a ransom for decryption. The program uses a custom encryption algorithm to lock files, with a corresponding method to decrypt them. It is intended strictly for educational purposes, showcasing the risks of ransomware and helping users understand how such threats operate.
+                </p>
+                <p>
+                    The application focuses on encrypting user files while avoiding critical system directories to prevent damage to the operating system. It reports progress throughout the encryption and decryption process, ensuring users are informed of the status. By integrating the Windows API, it efficiently handles file operations and interacts with the system to access directories and manipulate files.
+                </p>
+                <p>
+                    The ransomware works by encrypting files in user directories, modifying them in blocks, and appending a .tu extension to indicate they are encrypted. To decrypt the files, a decryption tool is used along with the key that reverses the encryption process, restoring files to their original form. System-critical files are excluded from encryption to ensure the operating system remains functional.
+                </p>               
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+</body>
+</html>

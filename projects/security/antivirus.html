@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AntiVirus</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <style>
+        * CSS for horizontal alignment and larger images */
+        .image-container {
+            display: flex; /* Use flexbox for horizontal alignment */
+            flex-direction: row; /* Align images in a row */
+            align-items: center; /* Center images vertically */
+            gap: 20px; /* Space between images */
+            padding: 20px; /* Padding around the images */
+            overflow-x: auto; /* Allow horizontal scrolling if needed */
+        }
+
+        .project-img {
+            max-width: 600px; /* Set a larger maximum width for images */
+            max-height: 500px; /* Optional: Set a maximum height to maintain aspect ratio */
+            width: auto; /* Maintain aspect ratio */
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid #ccc; /* Optional: Border for better visibility */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Shadow for visual depth */
+        }
+
+        .project-details {
+            padding: 20px; /* Add padding around the project details */
+            box-sizing: border-box; /* Include padding in the total width */
+        }
+    </style>
+</head>
+<body>
+    <section id="project-details">
+        <h2>AntiVirus</h2>
+        <div class="project-details">
+            <div class="image-container">
+                
+                <img src="/pictures/antimalware.png" alt="Antivirus" class="project-img">
+            </div>
+            <div class="project-info">
+                <h3>AntiVirus</h3>
+                <p>
+                    Antivirus is a cross-platform application developed using C++ and OpenGL for rendering, ensuring compatibility across Windows, macOS, and Linux. It is designed to detect and manage malware threats efficiently, with both file-specific and full system scanning features. The application uses SHA-256 hashing for comparing files against known malware signatures, offering enhanced security and modern cryptographic methods. The OpenGL-rendered user interface ensures a consistent and responsive experience across all platforms.
+                </p> 
+                <p>
+                    Antivirus allows users to scan individual files or perform full system scans, recursively analyzing files within a specified directory. Real-time status updates keep users informed about the scanning progress, and results are logged to a text file for easy access and review.
+                </p>         
+                <p>
+                    The application leverages SHA-256 hashing, which computes a unique hash for each scanned file, compared against a database of known malware hashes. This secure method ensures reliable malware detection. For full system scans, the same process is applied across all files in the target directory, providing real-time updates on the results.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+</body>
+</html>

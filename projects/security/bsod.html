@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSOD</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <section id="project-details">
+        <h2>Blue Screen of Death (BSoD)</h2>
+        <div class="project-details">
+            <div class="image-container">
+                <img src="/pictures/BLE.png" alt="Blue Screen of Death" class="project-img">
+            </div>
+            <div class="project-info">
+                <h3>Blue Screen of Death (BSoD)</h3>
+                <p>
+                    This C++ application is designed to trigger a Blue Screen of Death (BSoD) on a Windows system. By leveraging 
+                    low-level NT API functions, the program induces a critical system error that leads the operating system to 
+                    crash, resulting in the display of a BSoD. 
+                </p>
+                <p>
+                    The application first elevates its process privileges to allow for system-level shutdown operations. Once it 
+                    has the necessary permissions, it calls the `NtRaiseHardError` function with a specific error status. This 
+                    function simulates a severe error condition that the Windows operating system cannot recover from. The 
+                    result is a complete system halt, and the BSoD is displayed, typically accompanied by an error message 
+                    indicating the nature of the issue.
+                </p>
+                <p>
+                    This application is intended for educational purposes, demonstrating the impact of critical system errors 
+                    and the underlying mechanics of how the Windows operating system handles such failures. It should only be 
+                    executed in a controlled environment, as triggering a BSoD will result in a complete system crash and may 
+                    lead to data loss.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+</body>
+</html>
