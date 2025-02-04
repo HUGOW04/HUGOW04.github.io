@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ransomware - Hugo Winnberg</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <style>
+        .project-detail-image {
+            max-width: 100%; /* Ensure the image does not exceed its container */
+            height: auto; /* Maintain aspect ratio */
+            width: 800px; /* Increased width to make the image larger */
+        }
+    </style>
+</head>
+<body>
+    <div id="main-content">
+        <section id="project-details">
+            <div class="project-section">
+                <h2>Ransomware</h2>
+                <div class="project-details">
+                    <img src="/pictures/encrypted.png" alt="Ransomware Screenshot" class="project-detail-image">
+                    <div class="project-info">
+                        <h3>Ransomware</h3>
+                        <p>
+                            This C++ ransomware program is designed to demonstrate the functionality of file encryption and decryption on a Windows system. The program simulates a ransomware attack by encrypting user files and demanding a ransom for decryption. Please note, this project is strictly for educational purposes and should not be used for malicious intent.
+                        </p>
+                        <p>
+                            The application uses a custom encryption algorithm to lock files and provides a corresponding decryption method to restore the files. It is created to help users understand how ransomware works, showcasing the risks and demonstrating the encryption and decryption processes.
+                        </p>
+                        <p>
+                            The ransomware encrypts user files by modifying them in blocks and appending a `.tu` extension to indicate they are encrypted. To decrypt the files, a decryption tool, along with the appropriate key, is used to reverse the encryption process and restore the files to their original form. The program avoids critical system directories to prevent damage to the operating system.
+                        </p>
+                        <p>
+                            This project integrates the Windows API to efficiently handle file operations, access directories, and manipulate files. By monitoring the encryption and decryption progress, the program ensures users are informed about the status of the operation.
+                        </p>
+                        <a href="https://github.com/HUGOW04/TuWare" target="_blank" class="btn">View Source Code on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <!-- You can add footer content here -->
+    </footer>
+</body>
+</html>

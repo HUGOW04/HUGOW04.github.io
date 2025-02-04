@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AntiVirus - Hugo Winnberg</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <div id="main-content">
+        <section id="project-details">
+            <div class="project-section">
+                <h2>AntiVirus</h2>
+                <div class="project-details">
+                    <img src="/pictures/antimalware.png" alt="Antivirus Screenshot" class="project-detail-image">
+                    <div class="project-info">
+                        <h3>Cross-Platform AntiVirus</h3>
+                        <p>
+                            This version of the AntiVirus project is an improved version of my previous antivirus application. It is a cross-platform tool developed in C++ with OpenGL for rendering, ensuring compatibility across Windows, macOS, and Linux. The application efficiently detects and manages malware threats, offering file-specific and full system scanning features. Unlike my previous version, this iteration uses the more secure SHA-256 hashing algorithm instead of MD5 to compare files against known malware signatures, providing enhanced security through modern cryptographic methods. The user interface, rendered with OpenGL, guarantees a responsive and consistent experience across all platforms.
+                        </p>
+                        <p>
+                            The application allows users to scan individual files or perform full system scans, recursively analyzing files within specified directories. During scanning, real-time updates provide the status of the operation, and results are logged to a text file for easy access. This ensures users are always informed about the progress of the scan.
+                        </p>
+                        <p>
+                            This AntiVirus tool uses SHA-256 hashing to generate a unique hash for each scanned file, which is then compared with a database of known malware hashes. This approach ensures reliable detection of malicious files. For full system scans, the process is applied recursively across all files, providing real-time feedback on detected threats.
+                        </p>
+                        <p>
+                            It's important to note that this version is a simple malware scanner that compares files with a database of known malware hashes. While it is a step forward in security, there are many features I plan to add in the future to enhance its capabilities and make it more comprehensive.
+                        </p>
+                        <a href="https://github.com/HUGOW04/Antivirus" target="_blank" class="btn">View Source Code on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <!-- You can add footer content here -->
+    </footer>
+</body>
+</html>
