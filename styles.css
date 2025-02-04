@@ -4,13 +4,31 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #2e2e2e; /* Dark grey background */
-    color: #f4f4f4; /* Light grey text */
-    padding-bottom: 60px; /* Adjust based on the footer's height */
+    background: #2e2e2e;
+    color: #f4f4f4;
+    padding-bottom: 60px;
 }
 
+#main-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#intro-section {
+    order: 1;
+    margin-bottom: 30px;
+    background: #3a3a3a;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Header and Navigation Styles */
 header:hover {
-    background: #333; /* Slightly lighter grey on hover */
+    background: #333;
 }
 
 nav ul {
@@ -27,7 +45,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f4f4f4; /* Light grey text */
+    color: #f4f4f4;
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
@@ -35,7 +53,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #4caf50; /* Light green on hover */
+    color: #4caf50;
 }
 
 nav ul li a::after {
@@ -43,24 +61,13 @@ nav ul li a::after {
     display: block;
     height: 2px;
     width: 0;
-    background: #4caf50; /* Light green underline */
+    background: #4caf50;
     transition: width 0.3s ease-in-out;
     margin: 5px auto 0;
 }
 
 nav ul li a:hover::after {
     width: 100%;
-}
-
-/* Section Styles */
-section {
-    padding: 30px;
-    margin: 30px auto;
-    max-width: 1400px; /* Increased max-width */
-    background: #3a3a3a; /* Dark grey background */
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
 }
 
 /* Intro Section Styles */
@@ -72,65 +79,61 @@ section {
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
     object-fit: cover;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .intro-text {
     flex: 1;
 }
 
-/* Button Styles */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #4caf50; /* Light green */
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.btn:hover {
-    background-color: #45a049; /* Slightly darker green */
-}
-/* Container for Skills and Projects */
+/* Skills and Projects Container */
 #skills-projects {
+    order: 2;
     display: flex;
     gap: 20px;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 /* Skills Section */
 .skills {
-    flex: 0 0 300px; /* Fixed width of 300px, doesn't grow or shrink */
-    background: #3a3a3a; /* Dark grey background */
+    flex: 0 0 300px;
+    background: #3a3a3a;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    align-self: flex-start; /* Aligns to the top of the container */
+    align-self: flex-start;
 }
 
-/* Projects Section Styles */
+/* Projects Section */
 .projects {
     flex: 2;
 }
 
+.project-section {
+    order: 3;
+    background: #3a3a3a;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
 .project-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Increased minimum width */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
 .project-item {
     display: block;
-    background: #2e2e2e; /* Darker grey background for items */
-    color: #f4f4f4; /* Light grey text */
+    background: #2e2e2e;
+    color: #f4f4f4;
     text-decoration: none;
     border-radius: 8px;
     overflow: hidden;
@@ -146,80 +149,32 @@ section {
 .project-item img {
     width: 100%;
     height: 50%;
-    object-fit: cover; /* Ensures images cover their container without distortion */
+    object-fit: cover;
 }
 
 .project-item h3 {
     margin: 15px;
 }
 
-/* Project Section Styles */
-.project-section {
-    background: #3a3a3a; /* Dark grey background */
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    box-sizing: border-box; /* Ensures padding is included in the width */
-    margin: 0 auto; /* Centering the section */
-    max-width: 1400px; /* Increased max-width */
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #4caf50;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
 }
 
-/* Container for Projects */
-.projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive minimum width */
-    gap: 20px;
-    padding: 20px;
-    box-sizing: border-box; /* Ensures padding is included in the width */
-    max-width: 1400px; /* Increased max-width */
-    margin: 0 auto; /* Centering the grid container */
+.btn:hover {
+    background-color: #45a049;
 }
 
-.project-details {
-    display: flex;
-    flex-direction: column; /* Stack image and info vertically */
-    gap: 20px;
-}
-
-.project-details img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.project-img {
-    flex: 1;
-    max-width: 100%; /* Ensures the image does not exceed its container */
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.project-info {
-    flex: 2;
-    min-width: 300px; /* Ensures the text section has a minimum width */
-}
-
-.project-info h3 {
-    margin-top: 0;
-}
-
-.project-info ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-.project-info ul li {
-    margin-bottom: 10px;
-}
-
-
-/* Media Queries for Responsive Design */
-
-/* For tablets and smaller desktops */
+/* Responsive Design */
 @media (max-width: 1024px) {
-    .intro {
+    .intro, #skills-projects {
         flex-direction: column;
         text-align: center;
     }
@@ -229,16 +184,12 @@ section {
         height: 120px;
     }
 
-    #skills-projects {
-        flex-direction: column;
-    }
-
     .skills, .projects {
-        max-width: 100%; /* Ensure skills and projects take full width */
+        max-width: 100%;
+        flex: 0 0 100%;
     }
 }
 
-/* For mobile devices */
 @media (max-width: 768px) {
     header {
         padding: 15px 0;
@@ -253,31 +204,12 @@ section {
         padding: 8px 16px;
     }
 
-    section {
-        padding: 20px;
-        margin: 20px auto;
-        max-width: 100%; /* Full width on small screens */
-    }
-
     .project-list {
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* Single column on small screens */
-    }
-
-    .intro {
-        flex-direction: column;
-        text-align: center;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
 
     .profile-pic {
         width: 100px;
         height: 100px;
-    }
-
-    .project-details {
-        flex-direction: column;
-    }
-
-    .project-info {
-        min-width: auto; /* Remove minimum width constraint */
     }
 }
