@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLL Injection Project</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <style>
+
+
+
+
+        .project-img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="main-content">
+        <section id="project-details">
+            <div class="project-section">
+                <h2>DLL Injection</h2>
+                <div class="project-details">
+                    <div class="image-container">
+                        <img src="/pictures/dllinjection.webp" alt="DLL Injection Screenshot" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Overview</h3>
+                        <p>
+                            This project involves creating a DLL injection application that injects a dynamic link library (DLL) into a running process. 
+                            The tool allows users to select a DLL file and inject it into a target process, where the DLL's code can then be executed. 
+                            This technique is often used for various purposes, including debugging, extending functionality, or modifying the behavior of applications.
+                        </p>
+
+                        <h3>Code Explanation</h3>
+                        <p>
+                            The functionality is implemented in C++ and includes the following components:
+                        </p>
+                        <ul>
+                            <li><strong>DLL Injection Logic:</strong> Opens the target process and allocates memory for the DLL path. Writes the path to the allocated memory and creates a remote thread in the target process to load the DLL using `LoadLibraryA`.</li>
+                            <li><strong>File Dialog:</strong> Uses the Windows file dialog to allow the user to select the DLL file to inject.</li>
+                            <li><strong>Error Handling:</strong> Includes robust error handling for opening processes, memory allocation, writing memory, and creating remote threads.</li>
+                        </ul>
+                        
+                        <h3>Technical Details</h3>
+                        <p>
+                            The DLL injection tool is built using C++ and relies on Windows API functions such as `OpenProcess`, `VirtualAllocEx`, `WriteProcessMemory`, and `CreateRemoteThread`. It demonstrates key aspects of process manipulation and inter-process communication at a low level. 
+                            This project highlights advanced system programming techniques for managing and modifying running processes.
+                        </p>
+
+                        <h3>Ethical Considerations</h3>
+                        <p>
+                            DLL injection can be misused for malicious purposes, such as cheating in software or unauthorized modification of applications. This project is designed for educational and ethical use, and users should ensure they have permission to inject DLLs into target processes. 
+                            Responsible usage and adherence to software policies are crucial.
+                        </p>
+
+                        <a href="https://github.com/HUGOW04/DLLInjection" target="_blank" class="btn">View Source Code on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <!-- Footer content can go here if needed -->
+    </footer>
+</body>
+</html>

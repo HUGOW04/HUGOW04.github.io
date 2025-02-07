@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trojan Horse</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <style>
+        * CSS for horizontal alignment and larger images */
+        .image-container {
+            display: flex; /* Use flexbox for horizontal alignment */
+            flex-direction: row; /* Align images in a row */
+            align-items: center; /* Center images vertically */
+            gap: 20px; /* Space between images */
+            padding: 20px; /* Padding around the images */
+            overflow-x: auto; /* Allow horizontal scrolling if needed */
+        }
+
+        .project-img {
+            max-width: 600px; /* Set a larger maximum width for images */
+            max-height: 500px; /* Optional: Set a maximum height to maintain aspect ratio */
+            width: auto; /* Maintain aspect ratio */
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid #ccc; /* Optional: Border for better visibility */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Shadow for visual depth */
+        }
+
+        .project-details {
+            padding: 20px; /* Add padding around the project details */
+            box-sizing: border-box; /* Include padding in the total width */
+        }
+    </style>
+</head>
+<body>
+    <div id="main-content">
+        <section id="project-details">
+            <div class="project-section">
+                <h2>Trojan Horse</h2>
+                <div class="project-details">
+                    <div class="image-container">
+                        <img src="/pictures/trojan.webp" alt="Trojan Horse" class="project-img">
+                        <img src="/pictures/remote.webp" alt="Remote Control" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>Trojan Horse</h3>
+                        <p>
+                            This C++ application is a Trojan horse, a type of malicious software that disguises itself as legitimate 
+                            software to gain access to a user's system. Once executed, it performs a variety of harmful activities 
+                            without the user's consent, such as remote control, file manipulation, and data collection.
+                        </p>
+                        <p>
+                            Upon execution, the Trojan horse conceals the console window to evade user awareness. It establishes a 
+                            connection to a remote server or command center to receive and execute commands. The application can 
+                            perform a range of actions including file management, keystroke logging, taking screenshots, and extracting 
+                            sensitive browser data.
+                        </p>
+                        <p>
+                            This application is intended for educational purposes to demonstrate the capabilities and risks of such 
+                            malicious software. Use it responsibly and only in a controlled environment where you have explicit permission 
+                            to test and analyze such tools.
+                        </p>
+                        <a href="https://github.com/HUGOW04/Trojan" target="_blank" class="btn">View Source Code on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <!-- You can add footer content here -->
+    </footer>
+</body>
+</html>
+

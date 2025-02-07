@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubber Ducky</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <style>
+        * CSS for horizontal alignment and larger images */
+        .image-container {
+            display: flex; /* Use flexbox for horizontal alignment */
+            flex-direction: row; /* Align images in a row */
+            align-items: center; /* Center images vertically */
+            gap: 20px; /* Space between images */
+            padding: 20px; /* Padding around the images */
+            overflow-x: auto; /* Allow horizontal scrolling if needed */
+        }
+
+        .project-img {
+            max-width: 600px; /* Set a larger maximum width for images */
+            max-height: 500px; /* Optional: Set a maximum height to maintain aspect ratio */
+            width: auto; /* Maintain aspect ratio */
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid #ccc; /* Optional: Border for better visibility */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Shadow for visual depth */
+        }
+
+        .project-details {
+            padding: 20px; /* Add padding around the project details */
+            box-sizing: border-box; /* Include padding in the total width */
+        }
+    </style>
+</head>
+<body>
+    <div id="main-content">
+        <section id="project-details">
+            <div class="project-section">
+                <h2>Rubber Ducky</h2>
+                <div class="project-details">
+                    <div class="image-container">
+                        <img src="/pictures/rubber.webp" alt="Rubber Ducky" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3>Rubber Ducky USB</h3>
+                        <p>
+                            This project involves a Rubber Ducky USB device capable of executing automated keystroke injections on a Windows system.
+                            Unlike traditional BadUSB devices, this version works with an SD card USB without requiring additional software.
+                            It demonstrates how a simple USB device can be used to deliver payloads by simulating keyboard input.
+                            The Rubber Ducky can execute commands rapidly, enabling actions such as retrieving system information,
+                            manipulating files, and gaining unauthorized access.
+                        </p>
+                        <p>
+                            The goal of this project is to raise awareness about USB-based security threats and emphasize the need for proper safeguards.
+                        </p>
+                        <a href="https://github.com/HUGOW04/BadUsb" target="_blank" class="btn">View Source Code on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <!-- Footer content can be added here -->
+    </footer>
+</body>
+</html>
