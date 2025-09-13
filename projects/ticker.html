@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portfolio - Ticker Display</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">DevPortfolio</a>
+                <div class="nav-links">
+                    <a href="../index.html">Projects</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Resume</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero container">
+        <h1>Dynamic Ticker Display</h1>
+        <p>A real-time stock and cryptocurrency ticker powered by the ESP32 microcontroller with Wi-Fi integration.</p>
+    </section>
+
+    <article class="project-content container">
+        <div class="project-details">
+
+            <figure class="project-image-centered">
+                <img src="../pic/ticker.webp" alt="Ticker Display" class="img-small-rounded">
+            </figure>
+
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p>
+                    This project is centered around building a dynamic ticker display using the ESP32 microcontroller, which integrates Wi-Fi capabilities. The device fetches real-time data for stocks and cryptocurrencies from various online sources, allowing users to monitor market trends and price fluctuations effortlessly. The ticker display presents the latest price information in an easy-to-read format, ideal for traders and financial enthusiasts.
+                </p>
+
+                <h2>Key Features</h2>
+                <p>
+                    The ticker fetches live prices for stocks and cryptocurrencies using web APIs. The ESP32 manages the data retrieval and updates the display in real time. Users can customize the ticker to monitor specific assets and tailor the display to their preferences. The device connects to the internet via Wi-Fi, ensuring continuous access to market data. It supports integration with various display types, such as LCD or OLED screens, providing clear visuals for the latest prices.
+                </p>
+
+                <h2>Technical Details</h2>
+                <p>
+                    The project leverages the processing power of the ESP32 to interact with APIs and update the display with current market information. The system polls the APIs at regular intervals for timely updates. Additional hardware features can include alerts for price thresholds and tracking multiple assets simultaneously. Display customization options enhance readability and overall user experience.
+                </p>
+            </div>
+
+        </div>
+    </article>
+</body>
+</html>

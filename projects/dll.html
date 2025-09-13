@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portfolio - DLL Injection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">DevPortfolio</a>
+                <div class="nav-links">
+                    <a href="../index.html">Projects</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Resume</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero container">
+        <h1>DLL Injection Tool</h1>
+        <p>A C++ application for injecting dynamic link libraries (DLLs) into running processes for debugging or extending functionality.</p>
+    </section>
+
+    <article class="project-content container">
+        <div class="project-details">
+
+            <figure class="project-image-centered">
+                <img src="../pic/dllinjection.webp" alt="DLL Injection Interface" class="img-small-rounded">
+            </figure>
+
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p>
+                    This project involves creating a DLL injection application that allows users to select a DLL and inject it into a running process. Once injected, the DLL's code executes within the target process, enabling modifications or extensions to its behavior.
+                </p>
+
+                <h2>Code Explanation</h2>
+                <p>
+                    The application is implemented in C++ and includes DLL injection logic to open the target process, allocate memory for the DLL path, write the path to memory, and create a remote thread to load the DLL. It also uses a Windows file dialog for selecting DLL files and implements robust error handling for process access, memory allocation, and thread creation.
+                </p>
+
+                <h2>Technical Details</h2>
+                <p>
+                    The tool relies on Windows API functions such as OpenProcess, VirtualAllocEx, WriteProcessMemory, and CreateRemoteThread. It demonstrates advanced system programming techniques for managing and modifying running processes at a low level.
+                </p>
+
+                <h2>Ethical Considerations</h2>
+                <p>
+                    DLL injection can be misused for malicious purposes. This project is intended for educational and ethical use only, and users should ensure they have permission to inject DLLs into target processes. Responsible usage and adherence to software policies are essential.
+                </p>
+
+                <div class="buttons">
+                    <a href="https://github.com/HUGOW04/DLLInjection" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> View Source Code
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </article>
+</body>
+</html>

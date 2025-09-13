@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portfolio - Phishing Website Simulation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">DevPortfolio</a>
+                <div class="nav-links">
+                    <a href="../index.html">Projects</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Resume</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero container">
+        <h1>Phishing Website Simulation</h1>
+        <p>A C++ ESP32 project demonstrating a phishing attack by simulating a rogue Wi-Fi network and a fake login page for educational purposes.</p>
+    </section>
+
+    <article class="project-content container">
+        <div class="project-details">
+
+            <figure class="project-image-centered">
+                <img src="../pic/login.webp" alt="Real Login Page" class="img-small-rounded"> 
+            </figure>
+
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p>
+                    This C++ application demonstrates a phishing attack using an ESP32 device. The ESP32 creates a rogue Wi-Fi network called TUC Yrkeshögskola. Unsuspecting users who connect are redirected to a fake login page closely mimicking the real institutional website. The page captures email and password credentials without the user's knowledge.
+                </p>
+
+                <h2>Functionality</h2>
+                <p>
+                    Users attempting to log in will see a fake processing screen while their credentials are silently captured by the ESP32. This demonstrates how phishing attacks work and emphasizes the importance of verifying Wi-Fi networks and website authenticity.
+                </p>
+
+                <h2>Educational Purpose</h2>
+                <p>
+                    This project is intended strictly for educational purposes. It helps users understand phishing techniques and the associated risks, providing a safe, controlled environment to study cybersecurity threats.
+                </p>
+
+                <div class="buttons">
+                    <a href="https://github.com/HUGOW04/PhishingWebsite" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> View Source Code
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </article>
+</body>
+</html>

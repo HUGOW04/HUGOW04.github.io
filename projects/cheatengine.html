@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portfolio - Cheat Engine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">DevPortfolio</a>
+                <div class="nav-links">
+                    <a href="../index.html">Projects</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Resume</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero container">
+        <h1>Cheat Engine</h1>
+        <p>A C++ tool for scanning and manipulating process memory, used for debugging, reverse engineering, and educational purposes.</p>
+    </section>
+
+    <article class="project-content container">
+        <div class="project-details">
+
+            <figure class="project-image-centered">
+                <img src="../pic/cheatengine.webp" alt="Cheat Engine Interface" class="img-small-rounded">
+            </figure>
+
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p>
+                    This project focuses on creating a Cheat Engine application that enables users to scan and manipulate a process's memory. By locating and altering memory addresses corresponding to specific values, the application allows customization of in-game parameters or other software variables.
+                </p>
+
+                <h2>Code Explanation</h2>
+                <p>
+                    The core functionality is implemented in C++. It includes functions for scanning memory for specific values, filtering addresses to refine the search, and writing new values to modify the memory. This enables the user to interact with processes at a low level and customize behavior according to their needs.
+                </p>
+
+                <h2>Technical Details</h2>
+                <p>
+                    The application uses C++ to directly interact with process memory, employing system-level programming techniques to read and write memory addresses. Handling raw memory addresses and values demonstrates the technical proficiency required for low-level process manipulation.
+                </p>
+
+                <h2>Ethical Considerations</h2>
+                <p>
+                    While memory manipulation can be used for legitimate purposes like debugging or reverse engineering, it also has the potential for misuse in gaming. Cheating can disrupt game integrity and lead to bans or legal action. This project is intended purely for educational purposes, emphasizing responsible and legal usage.
+                </p>
+
+                <div class="buttons">
+                    <a href="https://github.com/HUGOW04/CheatEngine" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> View Source Code
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </article>
+</body>
+</html>

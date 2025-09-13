@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portfolio - x86 Operating System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">DevPortfolio</a>
+                <div class="nav-links">
+                    <a href="../index.html">Projects</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Resume</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero container">
+        <h1>x86 Operating System Project</h1>
+        <p>A custom operating system built using Assembly and C, featuring 16-bit boot mode and 32-bit operation.</p>
+    </section>
+
+    <article class="project-content container">
+        <div class="project-details">
+
+            <figure class="project-image-centered">
+                <img src="../pic/os.webp" alt="x86 OS Boot Screen" class="img-small-rounded">
+            </figure>
+
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p>
+                    The x86 operating system described in this project is crafted using Assembly language and starts with a 16-bit boot mode. This phase allows compatibility during the initial setup before transitioning to 32-bit mode, which offers advanced functionality and improved performance. The system features integrated input/output (I/O) operations, enabling keyboard input, CPU management, and screen clearing, giving users direct control over these fundamental tasks.
+                </p>
+
+
+                <h2>Memory Management</h2>
+                <p>
+                    One of the key aspects of this operating system is its custom memory management system. The malloc function has been implemented in C, completely independent of external libraries, highlighting the self-sufficiency of the OS in terms of resource allocation and memory handling. The overall development showcases the ability to seamlessly integrate Assembly and C, combining the low-level control of Assembly with the more structured, high-level operations provided by C.
+                </p>
+
+                <h2>Project Highlights</h2>
+                <p>
+                    This operating system represents a well-rounded project that exemplifies key features such as the 16-bit boot mode for initialization, a transition to 32-bit mode for enhanced performance, custom I/O capabilities, and robust memory management. By blending Assembly and C, the system strikes a balance between direct hardware interaction and efficient, higher-level programming.
+                </p>
+
+                <div class="buttons">
+                    <a href="https://github.com/HUGOW04/x86" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> View Source Code
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </article>
+</body>
+</html>

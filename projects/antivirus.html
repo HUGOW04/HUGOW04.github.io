@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portfolio - AntiVirus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">DevPortfolio</a>
+                <div class="nav-links">
+                    <a href="../index.html">Projects</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Resume</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero container">
+        <h1>Cross-Platform AntiVirus</h1>
+        <p>A cross-platform malware scanner developed in C++ with OpenGL, using SHA-256 hashing for secure file comparison and a neural network for advanced detection.</p>
+    </section>
+
+    <article class="project-content container">
+        <div class="project-details">
+
+            <figure class="project-image-centered">
+                <img src="../pic/antivirus.webp" alt="AntiVirus Interface" class="img-small-rounded">
+            </figure>
+
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p>
+                    This version of the AntiVirus project is an improved version of my previous antivirus application. It is a cross-platform tool developed in C++ with OpenGL for rendering, ensuring compatibility across Windows, macOS, and Linux. The application efficiently detects and manages malware threats, offering file-specific and full system scanning features. Unlike the previous version, this iteration uses SHA-256 hashing instead of MD5, providing enhanced security through modern cryptographic methods.
+                </p>
+
+                <h2>Implemented Features</h2>
+                <p>
+                    The system currently supports signature scanning, real-time file system monitoring, heuristic detection, memory scanning for threats, autorun monitoring of startup apps and processes, system tray integration showing CPU and memory stats, a fully integrated graphical interface with OpenGL, and desktop notifications. Additionally, a neural network has been implemented to detect processes and malware that could not be found using hashes, greatly improving the system's ability to detect unknown threats.
+                </p>
+
+                <h2>Future Improvements</h2>
+                <p>
+                    Planned features include network scanning using WinAPI rules similar to Wireshark, detection of newly added files through Windows API hooks, phishing mail protection integrated with "Have I Been Pwned," scanning all new processes before execution with quarantine if suspicious, a full quarantine system to isolate or remove threats, sandbox execution for suspicious code, behavior analysis of programs, and expanded machine learning to detect unknown malware.
+                </p>
+
+                <div class="buttons">
+                    <a href="https://github.com/HUGOW04/SecureGuard" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> View Source Code
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </article>
+</body>
+</html>

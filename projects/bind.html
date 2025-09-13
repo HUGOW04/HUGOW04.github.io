@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portfolio - Automated Blinds</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html" class="logo">DevPortfolio</a>
+                <div class="nav-links">
+                    <a href="../index.html">Projects</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Resume</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero container">
+        <h1>Automated Blinds Project</h1>
+        <p>A smart blinds system using WiFi and a NEMA 23 stepper motor controlled by an ESP32 microcontroller.</p>
+    </section>
+
+    <article class="project-content container">
+        <div class="project-details">
+            <figure class="project-image-centered">
+                <img src="../pic/motor.webp" alt="Planetary Gearbox System" class="img-small-rounded">
+            </figure>
+
+            <div class="project-description">
+                <h2>Project Overview</h2>
+                <p>
+                    This project revolves around an automated blinds system that operates using WiFi and a NEMA 23 stepper motor controlled by an ESP32 microcontroller. The motor was initially too weak to lift the blinds by itself, so I applied a physical solution by incorporating a planetary gearbox. This gearbox amplifies the torque by a factor of 4-5, thanks to its design where one central "sun" gear is surrounded by four "planet" gears. These planetary gears mesh together, distributing the load evenly and allowing for greater torque output without needing to use a larger, more power-hungry motor. This setup enabled smooth, reliable movement of the blinds even under load.
+                </p>
+
+                <figure class="project-image-centered">
+                    <img src="../pic/planetarygear.webp" alt="Planetary Gearbox System" class="img-small-rounded">
+                </figure>
+
+                <h2>How the System Works</h2>
+                <p>
+                    The blinds are controlled through an ESP32 connected to a local WiFi network. The system is synced with NTP (Network Time Protocol) to ensure the blinds operate according to the correct time. It opens in the morning at 6 AM on weekdays and at 9 AM on weekends for a more relaxed start to the day. The blinds automatically close at 10 PM every night to provide privacy and security.
+                </p>
+
+               <h2>Manual Control and Sleep-In Mode</h2>
+                <p>
+                    Initially, the system used a separate ESP32 with a display that sent control signals to the blinds. However, I scrapped this approach and instead configured the ESP32 to host its own web server. Through the web interface, you can manually control the blinds, override scheduled operations if you want to sleep in for a day, force the blinds to move at a specific time, or even disable automatic operation entirely for a given day. This setup provides full flexibility and makes the system easier to manage remotely.
+                </p>
+
+                <figure class="project-image-centered">
+                    <img src="../pic/webserver.webp" alt="Blinds Running" class="img-small-rounded">
+                </figure>
+
+                <h2>Experimental Setup</h2>
+                <p>
+                    During development, I experimented with different motors to find the optimal strength for lifting the blinds. I also adjusted the gear tracks to perfectly fit my curtain setup, ensuring smooth movement without overloading the motor. This trial-and-error process was essential to achieve reliable operation and prevent mechanical issues.
+                </p>
+
+                <figure class="project-video-centered">
+                    <video class="video-small-rounded" controls>
+                        <source src="../pic/drive.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </figure>
+
+                <div class="buttons">
+                    <a href="https://github.com/HUGOW04/Smarthome" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+</body>
+</html>

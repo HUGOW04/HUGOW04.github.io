@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a class="logo">DevPortfolio</a>
+                <div class="nav-links">
+                    <a href="#">Projects</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Resume</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="filter-bar">
+            <button class="filter-btn active">All Projects</button>
+            <button class="filter-btn">Market</button>
+            <button class="filter-btn">AI</button>
+            <button class="filter-btn">Cybersecurity</button>
+            <button class="filter-btn">IoT</button>
+            <button class="filter-btn">Gaming</button>
+            <button class="filter-btn">System</button>
+        </div>
+
+        <div class="project-grid">
+            <a href="projects/tradebot.html" class="project-card" data-category="Market AI">
+                <div class="project-image">
+                    <img src="pic/bot.webp">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-title">Trading Platform</h3>
+                    <p class="project-description">
+                        Analytics software for stocks and crypto with trading indicators and automated trading.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">OpenGL</span>
+                        <span class="tech-tag">MARKET</span>
+                        <span class="tech-tag">BOT</span>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="projects/bind.html" class="project-card" data-category="IoT">
+                <div class="project-image">
+                    <img src="pic/motor.webp">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-title">Automatic Blinds</h3>
+                    <p class="project-description">
+                        A smart blinds system controlled via WiFi and ESP32, enhanced with a planetary gearbox for increased torque.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">Planetary Gearbox</span>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="projects/os.html" class="project-card" data-category="System">
+                <div class="project-image">
+                    <img src="pic/os.webp">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-title">Operating System</h3>
+                    <p class="project-description">
+                        A custom operating system built from scratch with x86 assembly and C.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Asm</span>
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">x86</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="projects/antivirus.html" class="project-card" data-category="Cybersecurity AI">
+                <div class="project-image">
+                    <img src="pic/antivirus.webp">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-title">Antivirus</h3>
+                    <p class="project-description">
+                        A lightweight antivirus solution built with C++ and OpenGL, utilizing SHA-256 for file integrity scanning and real-time threat detection.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">OpenGL</span>
+                        <span class="tech-tag">SHA256</span>
+                        <span class="tech-tag">Security</span>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="projects/compiler.html" class="project-card" data-category="System">
+                <div class="project-image">
+                    <img src="pic/compiler.webp">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-title">Compiler</h3>
+                    <p class="project-description">
+                        A high-performance compiler written in C, capable of generating optimized object code for efficient execution.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">Object Code</span>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="projects/ticker.html" class="project-card" data-category="IoT Market">
+                <div class="project-image">
+                    <img src="pic/ticker.webp">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-title">Ticker</h3>
+                    <p class="project-description">
+                        A real-time market price ticker powered by ESP32, displaying live stock and crypto prices on an OLED or LED matrix display.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">ESP32</span>
+                        <span class="tech-tag">Market Data</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="projects/aimbot.html" class="project-card" data-category="Gaming">
+                <div class="project-image">
+                    <img src="pic/aimbot.webp">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-title">CSGO Aimbot</h3>
+                    <p class="project-description">
+                        A C++-based aim assist system for CS:GO, reading game memory and adjusting the mouse position in real-time for precise target tracking.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Memory Reading</span>
+                    </div>
+                </div>
+            </a>           
+            
+            <a href="projects/smartwatch.html" class="project-card" data-category="IoT">
+                <div class="project-image">
+                    <img src="pic/clock5.webp">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-title">Smartwatch</h3>
+                    <p class="project-description">
+                        A smartwatch powered by ESP32, featuring a gyroscope and real-time clock, displaying time and steps on an OLED/LED matrix.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">ESP32</span>
+                        <span class="tech-tag">Gyroscope</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="projects/dll.html" class="project-card" data-category="Cybersecurity">
+                <div class="project-image">
+                    <img src="pic/dllinjection.webp" alt="DLL Injection Tool">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-title">DLL Injection Tool</h3>
+                    <p class="project-description">
+                        A C++ application that injects DLLs into running processes using Windows API, demonstrating advanced process manipulation and inter-process communication.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Windows API</span>
+                        <span class="tech-tag">Cybersecurity</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="projects/cheatengine.html" class="project-card" data-category="Gaming">
+                <div class="project-image">
+                    <img src="pic/cheatengine.webp" alt="Cheat Engine Interface">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-title">Cheat Engine</h3>
+                    <p class="project-description">
+                        A C++ application that scans and manipulates process memory, enabling memory value searching, filtering, and modification for educational or debugging purposes.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Memory Manipulation</span>
+                        <span class="tech-tag">Gaming</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="projects/news.html" class="project-card" data-category="Market AI Cybersecurity IoT Gaming System">
+            <div class="project-image">
+                <img src="pic/newsbot.webp" alt="Automated News Fetcher">
+            </div>
+            <div class="project-details">
+                <h3 class="project-title">Automated News Fetcher</h3>
+                <p class="project-description">
+                    An automated bot that fetches and filters relevant news articles, delivering real-time updates via a Discord webhook with summarized daily alerts.
+                </p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Web Scraping</span>
+                    <span class="tech-tag">Discord API</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="projects/hexeditor.html" class="project-card" data-category="Gaming Cybersecurity">
+            <div class="project-image">
+                <img src="pic/hexeditor.webp" alt="Hex Editor Interface">
+            </div>
+            <div class="project-details">
+                <h3 class="project-title">Hex Editor</h3>
+                <p class="project-description">
+                    A low-level file editing tool that provides a hexadecimal view of file contents, allowing precise manipulation and analysis of binary data for debugging and reverse engineering.
+                </p>
+                <div class="tech-tags">
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">File Analysis</span>
+                    <span class="tech-tag">Development Tools</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="projects/ducky.html" class="project-card" data-category="Cybersecurity IoT">
+            <div class="project-image">
+                <img src="pic/ducky.webp" alt="Rubber Ducky USB Device">
+            </div>
+            <div class="project-details">
+                <h3 class="project-title">Rubber Ducky USB Device</h3>
+                <p class="project-description">
+                    A Rubber Ducky USB device that executes automated keystroke injections on Windows systems using an SD card, demonstrating USB-based security threats for educational purposes.
+                </p>
+                <div class="tech-tags">
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">USB</span>
+                    <span class="tech-tag">Cybersecurity</span>
+                </div>
+            </div>
+        </a>
+
+
+        
+    </main>
+    <div class="pagination">
+        </div>
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
